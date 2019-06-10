@@ -1,7 +1,8 @@
-package rohitrj.com.calculatorapp
+package rohitrj.com.calculatorapp.Activities
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import rohitrj.com.calculatorapp.R
 import rohitrj.com.calculatorapp.ui.main.MainFragment
 
 class MainActivity : AppCompatActivity() {
