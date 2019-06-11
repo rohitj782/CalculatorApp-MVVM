@@ -29,27 +29,26 @@
                     android:layout_marginEnd="1dp"
                     android:layout_weight="1"
                     android:background="#91f72a1c"
-                    android:onClick="clearScreen"
                     android:text="CLR"
                     android:textSize="24sp"/>
 
             <Button
-                    android:id="@+id/ln"
+                    android:id="@+id/left"
                     android:layout_height="45dp"
                     android:layout_marginEnd="1dp"
                     android:layout_weight="1"
                     android:background="#9ff3ae2e"
-                    android:onClick="onOperatorClick"
+                   
                     android:text="("
                     android:textSize="24sp"/>
 
             <Button
-                    android:id="@+id/log"
+                    android:id="@+id/right"
                     android:layout_height="45dp"
                     android:layout_marginEnd="1dp"
                     android:layout_weight="1"
                     android:background="#9ff3ae2e"
-                    android:onClick="onOperatorClick"
+                   
                     android:text=")"
                     android:textSize="24sp"/>
 
@@ -73,7 +72,7 @@
                     android:layout_marginEnd="1dp"
                     android:layout_weight="1"
                     android:background="#60e0dede"
-                    android:onClick="appendNumericValues"
+                   
                     android:text="7"
                     android:textSize="32sp"/>
 
@@ -83,7 +82,7 @@
                     android:layout_marginEnd="1dp"
                     android:layout_weight="1"
                     android:background="#60e0dede"
-                    android:onClick="appendNumericValues"
+                   
                     android:text="8"
                     android:textSize="32sp"/>
 
@@ -93,7 +92,7 @@
                     android:layout_marginEnd="1dp"
                     android:layout_weight="1"
                     android:background="#60e0dede"
-                    android:onClick="appendNumericValues"
+                   
                     android:text="9"
                     android:textSize="32sp"/>
 
@@ -102,7 +101,7 @@
                     android:layout_height="45dp"
                     android:layout_weight="1"
                     android:background="#9ff3ae2e"
-                    android:onClick="onOperatorClick"
+                   
                     android:text="+"
                     android:textSize="32sp"/>
         </TableRow>
@@ -118,7 +117,7 @@
                     android:layout_marginEnd="1dp"
                     android:layout_weight="1"
                     android:background="#60e0dede"
-                    android:onClick="appendNumericValues"
+                   
                     android:text="4"
                     android:textSize="32sp"/>
 
@@ -128,7 +127,7 @@
                     android:layout_marginEnd="1dp"
                     android:layout_weight="1"
                     android:background="#60e0dede"
-                    android:onClick="appendNumericValues"
+                   
                     android:text="5"
                     android:textSize="32sp"/>
 
@@ -138,7 +137,7 @@
                     android:layout_marginEnd="1dp"
                     android:layout_weight="1"
                     android:background="#60e0dede"
-                    android:onClick="appendNumericValues"
+                   
                     android:text="6"
                     android:textSize="32sp"/>
 
@@ -147,7 +146,7 @@
                     android:layout_height="45dp"
                     android:layout_weight="1"
                     android:background="#9ff3ae2e"
-                    android:onClick="onOperatorClick"
+                   
                     android:text="-"
                     android:textSize="32sp"/>
         </TableRow>
@@ -163,7 +162,7 @@
                     android:layout_marginEnd="1dp"
                     android:layout_weight="1"
                     android:background="#60e0dede"
-                    android:onClick="appendNumericValues"
+                   
                     android:text="1"
                     android:textSize="32sp"/>
 
@@ -173,7 +172,7 @@
                     android:layout_marginEnd="1dp"
                     android:layout_weight="1"
                     android:background="#60e0dede"
-                    android:onClick="appendNumericValues"
+                   
                     android:text="2"
                     android:textSize="32sp"/>
 
@@ -183,7 +182,7 @@
                     android:layout_marginEnd="1dp"
                     android:layout_weight="1"
                     android:background="#60e0dede"
-                    android:onClick="appendNumericValues"
+                   
                     android:text="3"
                     android:textSize="32sp"/>
 
@@ -192,7 +191,7 @@
                     android:layout_height="45dp"
                     android:layout_weight="1"
                     android:background="#9ff3ae2e"
-                    android:onClick="onOperatorClick"
+                   
                     android:text="*"
                     android:textSize="32sp"/>
         </TableRow>
@@ -207,7 +206,7 @@
                     android:layout_marginEnd="1dp"
                     android:layout_weight="1"
                     android:background="#9ff3ae2e"
-                    android:onClick="onOperatorClick"
+                   
                     android:text="/"
                     android:textSize="32sp"/>
 
@@ -217,7 +216,7 @@
                     android:layout_marginEnd="1dp"
                     android:layout_weight="1"
                     android:background="#60e0dede"
-                    android:onClick="appendNumericValues"
+                   
                     android:text="0"
                     android:textSize="32sp"/>
 
@@ -227,7 +226,7 @@
                     android:layout_marginEnd="1dp"
                     android:layout_weight="1"
                     android:background="#9ff3ae2e"
-                    android:onClick="appendNumericValues"
+                   
                     android:text="."
                     android:textSize="32sp"/>
 
@@ -236,7 +235,7 @@
                     android:layout_height="45dp"
                     android:layout_weight="1"
                     android:background="#9ff3ae2e"
-                    android:onClick="onOperatorClick"
+                   
                     android:text="="
                     android:textSize="32sp"/>
         </TableRow>
@@ -250,21 +249,21 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editText" android:layout_marginStart="8dp"
+            android:id="@+id/editTextExpression" android:layout_marginStart="8dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             android:textSize="30sp"
             android:textAlignment="viewEnd" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/textView" android:padding="6dp"
+            app:layout_constraintBottom_toTopOf="@+id/textViewResult" android:padding="6dp"
             android:background="@android:color/white"/>
     <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/textView" android:layout_marginBottom="8dp"
+            android:id="@+id/textViewResult" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toTopOf="@+id/guideline"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" android:textSize="24sp" android:textStyle="italic"
-            android:textAlignment="textEnd" android:padding="4dp"/>
+            android:textAlignment="textEnd" android:padding="4dp" android:maxLines="1"/>
 
 </android.support.constraint.ConstraintLayout>
