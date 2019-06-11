@@ -9,6 +9,8 @@ import android.view.ViewGroup
 import android.widget.Toast
 import kotlinx.android.synthetic.main.main_fragment.*
 import rohitrj.com.calculatorapp.R
+import java.lang.Exception
+import java.math.BigDecimal
 import kotlin.math.min
 
 class MainFragment : Fragment() {
@@ -125,7 +127,29 @@ class MainFragment : Fragment() {
 
     fun performOperation(value: String) {
 
-        Toast.makeText(context, value+"", Toast.LENGTH_SHORT).show()
+//        Toast.makeText(context, value , Toast.LENGTH_SHORT).show()
+
+        if (value.equals("CLR")) {
+
+            viewModel.setMessage("")
+            textViewResult.text = viewModel.getMessage()
+            editTextExpression.setText("")
+
+        } else if (value.equals("DEL")) {
+
+            val currentExpression = editTextExpression.text.toString()
+            val length = currentExpression.length
+            if(length>0) {
+                val newExpression = currentExpression.removeRange(length - 1, length)
+                editTextExpression.setText(newExpression)
+                editTextExpression.setSelection(newExpression.length)
+            }
+            //todo perform mathematical operation ....
+        }
+    }
+
+    fun appendValue(value: String) {
+        //todo get current string from the user input and append the int and calculate the expression if possible
     }
 
 }

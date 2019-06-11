@@ -255,7 +255,8 @@
             android:textSize="30sp"
             android:textAlignment="viewEnd" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toTopOf="@+id/textViewResult" android:padding="6dp"
-            android:background="@android:color/white"/>
+            android:background="@android:color/white" android:selectAllOnFocus="false" android:focusable="false"
+            android:focusableInTouchMode="false"/>
     <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"

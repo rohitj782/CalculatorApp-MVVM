@@ -7,11 +7,11 @@ class MainViewModel : ViewModel() {
     var myMessage:String?=null
 
     fun setMessage(s:String?){
-        myMessage=s?:"Null Value"
+        myMessage=s?:"$"
     }
 
     fun getMessage(): String? {
-        return myMessage?:"Null Value"
+        return myMessage?:"$"
     }
 
 }
